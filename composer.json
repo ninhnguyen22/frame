@@ -1,0 +1,44 @@
+{
+  "name": "nin/frame",
+  "description": "Nin Frame.",
+  "authors": [
+    {
+      "name": "Ninh Van Nghia",
+      "email": "ninhnghia2@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "twig/twig": "^2.0",
+    "doctrine/orm": "^2.6.2",
+    "symfony/routing": "^5.3",
+    "symfony/http-foundation": "^5.3",
+    "symfony/yaml": "^5.3",
+    "symfony/config": "^5.3",
+    "symfony/dotenv": "^5.3",
+    "doctrine/collections": "^1.6",
+    "filp/whoops": "^2.13",
+    "psr/log": "^1.1",
+    "monolog/monolog": "^2.3",
+    "vlucas/phpdotenv": "^5.3",
+    "doctrine/cache": "^1.11"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^5.3",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nin\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev"
+}
