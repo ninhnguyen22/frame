@@ -7,8 +7,6 @@ use Nin\Libs\Exceptions\NotFoundException;
 
 class Dispatcher
 {
-    const CONTROLLER_BASE = '\Nin\Controllers\\';
-
     protected string $name;
     protected string $action;
     protected array $arguments;
@@ -18,7 +16,7 @@ class Dispatcher
         $controllerAgr = explode("::", $parameters['controller']);
 
         // Controller
-        $name = self::CONTROLLER_BASE . $controllerAgr[0];
+        $name = $controllerAgr[0];
         if (!class_exists($name)) {
             throw new \ReflectionException("Controller: {$name} doesn't exist!");
         }
