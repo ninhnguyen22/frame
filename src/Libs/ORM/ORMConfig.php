@@ -10,7 +10,7 @@ class ORMConfig extends AbstractConfig implements ORMConfigContract
     {
         $entitiesPath = $this->config->get('orm.entities_dir', ['Entities']);
         foreach ($entitiesPath as $key => $entity) {
-            $entitiesPath[$key] = ROOT . "src/" . $entity;
+            $entitiesPath[$key] = ROOT . $entity;
         }
         return $entitiesPath;
     }
