@@ -22,10 +22,10 @@
     "psr/log": "^1.1",
     "monolog/monolog": "^2.3",
     "vlucas/phpdotenv": "^5.3",
-    "doctrine/cache": "^1.11"
+    "doctrine/cache": "^1.11",
+    "symfony/var-dumper": "^5.3"
   },
   "require-dev": {
-    "symfony/var-dumper": "^5.3",
     "phpunit/phpunit": "^9.5"
   },
   "autoload": {
