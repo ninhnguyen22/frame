@@ -4,6 +4,7 @@ namespace Nin\Libs\Container;
 
 use Nin\Libs\Config\ConfigContract as ConfigContract;
 use Nin\Libs\Facades\RegisterFacade;
+use Nin\Libs\Request\RequestContract;
 
 /**
  * Class AbstractApplication
